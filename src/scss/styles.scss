@@ -1,0 +1,44 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "fonts";
+
+@import "variables";
+@import "mixins";
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/buttons";
+@import "bootstrap/type";
+@import "bootstrap/modal";
+
+@import "components/header";
+@import "components/footer";
+@import "components/base";
+@import "components/news";
+@import "components/pagination";
+@import "components/backlink";
+@import "components/inner";
+@import "components/list";
+@import "components/afisha";
+@import "components/slider";
+@import "components/slider2";
+@import "components/repertoire";
+@import "components/about";
+@import "components/portraits";
+@import "components/single";
+@import "components/gallery";
+@import "components/gallery2";
+@import "components/calendar";
+@import "components/hero";
+@import "components/quote";
+@import "components/shows";
+@import "components/stars";
+@import "components/home";
+@import "components/digest";
+@import "components/subscribe";
+@import "components/partners";

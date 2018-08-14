@@ -1,0 +1,36 @@
+h1 {
+    font-size: $h1-font-size;
+    @include media-breakpoint-up(lg) {
+        font-size: $h1-font-size-lg;
+        margin-bottom: 40px;
+    }
+}
+h3 {
+    font-size: $h3-font-size;
+    @include media-breakpoint-up(lg) {
+        font-size: $h3-font-size-lg;
+    }
+}
+h4 {
+    font-size: $h4-font-size;
+    @include media-breakpoint-up(lg) {
+        font-size: $h4-font-size-lg;
+    }
+}
+h5{
+    margin-bottom: 32px;
+    line-height: 32px;
+}
+h6 {
+    font-size: $h6-font-size;
+    line-height: 1.1;
+    @include media-breakpoint-up(lg) {
+        font-size: $h6-font-size-lg;
+    }
+}
+small{
+    font-size: $font-size-sm;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+

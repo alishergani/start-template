@@ -1,0 +1,14 @@
+.pagination{
+    margin: 20px 0;
+    @include media-breakpoint-up(lg) {
+        margin: 40px 0;
+    }    
+    &__current{
+        line-height: 1;
+        font-size: 24px;
+    }
+    &__total{
+        font-size: 12px;
+        opacity: 0.4;
+    }
+}

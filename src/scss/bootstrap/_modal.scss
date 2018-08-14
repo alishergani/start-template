@@ -1,0 +1,48 @@
+.modal-content{
+    position: relative;
+    flex-grow: 1;
+    box-shadow: 0 5px 34px 0 rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+.modal{
+}
+.modal-open .modal{
+    // overflow: hidden;
+}
+.modal-dialog{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    height: calc(100vh - 1.75rem*2);
+    width: 100%;
+    @include media-breakpoint-up(xl) {
+        padding-top: 45px;
+    }   
+}
+
+.modal-close{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 50;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid theme-color('gray');
+    align-items: center;
+    justify-content: center;
+    background: theme-color('white');
+    opacity: 0.5;
+    appearance: none;
+    cursor: pointer;
+    @include transition($transition);
+    &:hover{
+        opacity: 1;
+    }
+    @include media-breakpoint-up(xl) {
+        top: -50px;
+        right: -50px;
+    }    
+}

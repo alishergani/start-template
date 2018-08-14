@@ -1,0 +1,29 @@
+.backlink {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    &__link {
+        display: inline;
+        align-items: center;
+    }
+    &__icon {
+        width: 15px;
+        margin-right: 14px;
+        @include media-breakpoint-up(lg) {
+            width: 20px;
+            margin-right: 24px;
+        }        
+    }
+    &__title {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        color: $nav-page-link-color;
+        @include media-breakpoint-up(lg) {
+            letter-spacing: 0.8px;
+            font-size: 18px;
+        }
+    }
+}

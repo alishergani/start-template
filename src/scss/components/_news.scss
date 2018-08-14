@@ -1,0 +1,30 @@
+.news{
+    &__item{
+        margin-bottom: 32px;
+        @include media-breakpoint-up(lg){
+            margin-bottom: 40px;
+        }        
+    }
+    &__image{
+        display: block;
+        margin-bottom: 8px;
+        @include media-breakpoint-up(lg){
+            margin-bottom: 24px;
+        }
+    }
+    &__date{
+        opacity: .4;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    &__title{
+        opacity: 0.7;
+    }
+    &__description{
+        opacity: 0.4;
+        margin-bottom: 24px;
+        @include media-breakpoint-up(lg){
+            margin-bottom: 72px;
+        }        
+    }
+}

@@ -1,0 +1,27 @@
+.header {
+    &__btn {
+        margin-left: 36px;
+    }
+    &__lang {
+        @include media-breakpoint-up(lg) {
+            align-items: center;
+            position: relative;
+            display: flex;
+            margin-left: 6px;
+            padding-left: 6px;
+            &::before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                width: 1px;
+                height: 12px;
+                background: $white;
+                opacity: 0.4;
+            }
+        }
+        .dropdown-menu {
+            position: absolute;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.stars {
+    background: #E2E2E2;
+    position: relative;
+    padding-top: 80px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        height: 80px;
+    }
+    &::before{
+        top: 0;
+        background-image: url('img/stars-top.png');
+    }
+    &__header {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        flex-shrink: 0;
+        position: relative;
+        z-index: 4;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, .5);
+        .active & {
+            -webkit-filter: none;
+            filter: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__article {
+        display: none;
+        padding-left: 75px;
+        font-size: 14px;
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }        
+    }
+    &__label {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: rgba(theme-color('dark'), .5);
+        display: block;
+        margin: 5px 0;
+    }
+    &__instagram {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(theme-color('dark'), .7);
+        img {
+            margin-right: 5px;
+        }
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            justify-content: flex-start;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__item {
+        position: relative;
+        @include media-breakpoint-up(lg) {
+            // display: flex;
+            margin-right: 20px;
+        }
+    }
+    &__bg {
+        display: none;
+        // @include media-breakpoint-up(lg) {
+        //     content: '';
+        //     z-index: -1;
+        //     position: absolute;
+        //     display: block;
+        //     left: 100px;
+        //     bottom: 20px;
+        //     top: -20px;
+        //     background: theme-color('white');
+        // }
+    }
+    &__content {
+        z-index: 5;
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+        // @include media-breakpoint-up(lg) {
+        //     left: -45px;
+        //     text-align: left;
+        // }
+    }
+    &__title {
+        position: relative;
+        // @include transition(all 0.5s);
+        font-size: 15px;
+        
+        @include media-breakpoint-up(lg) {
+            // .active &{
+                font-size: inherit;
+            //    font-size: 24px;
+            //    color: theme-color('primary');
+            }
+        // }
+    }
+    &__carousel {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+    }
+    &__wrap {
+        margin-top: -15px;
+        padding-top: 5px;
+        overflow: hidden;
+        position: relative;
+        height: 430px;
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+            height: 640px;
+        }
+    }
+    &__progress {
+        width: 100%;
+        max-width: 416px;
+        padding: 50px 0;
+        margin: 0 auto;
+        .ui-slider {
+            height: 1px;
+            background: rgba( #1b1b1d, 0.5);
+        }
+        .ui-slider-handle {
+            @include transition(all .15s);
+            display: block;
+            position: relative;
+            top: -26px;
+            width: 52px;
+            height: 52px;
+            background-image: url('icons/progress.png');
+            background-size: 100%;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../assets/fonts/LucidaGrande-Bold.eot');
+    src: local('Lucida Grande Bold'), local('LucidaGrande-Bold'),
+        url('../assets/fonts/LucidaGrande-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/LucidaGrande-Bold.woff2') format('woff2'),
+        url('../assets/fonts/LucidaGrande-Bold.woff') format('woff'),
+        url('../assets/fonts/LucidaGrande-Bold.ttf') format('truetype'),
+        url('../assets/fonts/LucidaGrande-Bold.svg#LucidaGrande-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../assets/fonts/LucidaGrande.eot');
+    src: local('Lucida Grande'), local('LucidaGrande'),
+        url('../assets/fonts/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/LucidaGrande.woff2') format('woff2'),
+        url('../assets/fonts/LucidaGrande.woff') format('woff'),
+        url('../assets/fonts/LucidaGrande.ttf') format('truetype'),
+        url('../assets/fonts/LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prata';
+    src: url('../assets/fonts/Prata-Regular.eot');
+    src: local('Prata Regular'), local('Prata-Regular'),
+        url('../assets/fonts/Prata-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Prata-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Prata-Regular.woff') format('woff'),
+        url('../assets/fonts/Prata-Regular.ttf') format('truetype'),
+        url('../assets/fonts/Prata-Regular.svg#Prata-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

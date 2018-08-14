@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<partial src="_head.html"></partial>
+
+<body>
+    <partial src="_header.html"></partial>
+
+    <section class="page calendar">
+        <div class="container">
+            <div class="calendar__top">
+                <partial src="_page-title.html" title="Календарь"></partial>
+                <div class="calendar__month">
+                    <div class="pagination d-flex justify-content-between align-items-center">
+                        <a href="" class="pagination__prev">
+                            <img src="assets/icons/pagination-prev.png" srcset="assets/icons/pagination-prev@2x.png 2x">
+                        </a>
+                        <div class="pagination__index d-flex align-items-start">
+                            <span class="pagination__current">Апрель</span>
+                        </div>
+                        <a href="" class="pagination__next">
+                            <img src="assets/icons/pagination-next.png" srcset="assets/icons/pagination-next@2x.png 2x">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table calendar__table">
+            <tr>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Пн.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Понедельник
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Вт.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Вторник
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Ср.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Среда
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Чт.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Четверг
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Пт.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Пятница
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Сб.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Суббота
+                    </span>
+                </th>
+                <th>
+                    <span class="d-block d-lg-none">
+                        Вс.
+                    </span>
+                    <span class="d-none d-lg-block">
+                        Воскресенье
+                    </span>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">30</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">1</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">2</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">3</span>
+                    </div>
+                </td>
+                <td>
+                    <div data-tile-index="1" class="calendar__tile js-calendar-tile active">
+                        <span class="calendar__day">4</span>
+                        <div class="calendar__content-wrap js-calendar-slider-wrap">
+                            <div class="calendar__slider js-calendar-slider">
+                                <div data-index="0" class="calendar__content js-calendar-content" data-bg="assets/img/calendar/1@2x.jpg">
+                                    <article>
+                                        <div class="calendar__text">
+                                            Гастроли
+                                        </div>
+                                        <h5 class="calendar__title">
+                                            Серенада
+                                        </h5>
+                                        <div class="calendar__text">
+                                            <img class="calendar__icon" src="assets/icons/place-white.svg" alt="">
+                                            <span>г. Алматы, ул. Кабанбай Батыра, 110</span>
+                                        </div>
+                                    </article>
+
+                                    <div class="btn btn-ab-light calendar__button">
+                                        Купить билет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots js-dots">
+                            <span class="dot js-dot"></span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div data-tile-index="2" class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">5</span>
+                        <div class="calendar__content-wrap js-calendar-slider-wrap">
+                            <div class="calendar__slider js-calendar-slider">
+                                <div data-index="0" class="calendar__content js-calendar-content" data-bg="assets/img/calendar/1@2x.jpg">
+                                    <article>
+                                        <div class="calendar__text">
+                                            Гастроли
+                                        </div>
+                                        <h5 class="calendar__title">
+                                            In the Middle, Somewhat Elevated
+                                        </h5>
+                                        <div class="calendar__text">
+                                            <img class="calendar__icon" src="assets/icons/place-white.svg" alt="">
+                                            <span>г. Алматы, ул. Кабанбай Батыра, 110</span>
+                                        </div>
+                                    </article>
+
+                                    <div class="btn btn-ab-light calendar__button">
+                                        Купить билет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots js-dots">
+                            <span class="dot js-dot"></span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div data-tile-index="3" class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">6</span>
+                        <div class="calendar__content-wrap js-calendar-slider-wrap">
+                            <div class="calendar__slider js-calendar-slider">
+                                <div data-index="0" class="calendar__content js-calendar-content" data-bg="assets/img/calendar/1@2x.jpg">
+                                    <article>
+                                        <div class="calendar__text">
+                                            Гастроли
+                                        </div>
+                                        <h5 class="calendar__title">
+                                            Серенада
+                                        </h5>
+                                        <div class="calendar__text">
+                                            <img class="calendar__icon" src="assets/icons/place-white.svg" alt="">
+                                            <span>г. Алматы, ул. Кабанбай Батыра, 110</span>
+                                        </div>
+                                    </article>
+
+                                    <div class="btn btn-ab-light calendar__button">
+                                        Купить билет
+                                    </div>
+                                </div>
+                                <div data-index="1" class="calendar__content js-calendar-content" data-bg="assets/img/calendar/4@2x.jpg">
+                                    <article>
+                                        <div class="calendar__text">
+                                            Гастроли
+                                        </div>
+                                        <h5 class="calendar__title">
+                                            In the Middle, Somewhat Elevated
+                                        </h5>
+                                        <div class="calendar__text">
+                                            <img class="calendar__icon" src="assets/icons/place-white.svg" alt="">
+                                            <span>г. Алматы, ул. Кабанбай Батыра, 110</span>
+                                        </div>
+                                    </article>
+
+                                    <div class="btn btn-ab-light calendar__button">
+                                        Купить билет
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dots js-dots">
+                            <span class="dot js-dot"></span>
+                            <span class="dot js-dot"></span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">7</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">8</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">9</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">10</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">11</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">12</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">13</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">14</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">15</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">16</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">17</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">18</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">19</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">20</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">21</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">22</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">23</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">24</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">25</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">26</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">27</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">28</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">29</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">30</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">31</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">1</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">2</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="calendar__tile js-calendar-tile">
+                        <span class="calendar__day">3</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="calendar__placement js-calendar-placement">
+            
+        </div>
+    </section>
+
+    <partial src="_footer.html"></partial>
+</body>
+
+</html>

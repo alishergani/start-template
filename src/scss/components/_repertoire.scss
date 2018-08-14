@@ -1,0 +1,20 @@
+.repertoire-page{
+    padding-top: 20px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 54px;
+    }
+}
+.repertoire{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    &__info{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    &__info-item{
+        margin-bottom: 10px;
+    }
+    &__button{
+        margin-top: 20px;
+    }
+}

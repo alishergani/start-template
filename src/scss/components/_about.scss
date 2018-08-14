@@ -1,0 +1,15 @@
+.about{
+    p:first-child{
+        &::first-letter{
+            float: left;
+            display: block;
+            position: relative;
+            margin-top: 10px;
+            margin-right: 5px;
+            font-size: 48px;
+            line-height: 30px;
+            font-family: $headings-font-family;
+            color: theme-color('primary');
+        }
+    }
+}

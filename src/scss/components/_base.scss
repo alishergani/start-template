@@ -1,0 +1,30 @@
+a, .link{
+    @include transition($transition);
+}
+img{
+    max-width: 100%;
+}
+.page-title{
+    color: theme-color('primary');
+}
+.page-date{
+    color: $black;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+}
+::selection{
+    background-color: theme-color('primary');
+    color: $white;
+    opacity: 1;
+}
+.phone-link{
+    color: theme-color('dark');
+    &:hover{
+        color: theme-color('primary');
+    }
+    img{
+        margin-right: 16px;
+        display: inline-block;
+    }
+}

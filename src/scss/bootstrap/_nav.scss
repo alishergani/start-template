@@ -1,0 +1,23 @@
+.nav-page {
+    @include media-breakpoint-up(lg) {
+        margin-top: 16px;
+    }
+    .nav-item{
+        margin-right: $nav-page-link-spacing-y-lg/2;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .nav-link {
+        font-size: $font-size-sm;
+        padding: $nav-page-link-spacing-y 0;
+        text-transform: uppercase;
+        color: $nav-page-link-color;
+        @include ab-btn-hover();
+        @include media-breakpoint-up(lg) {
+            font-size: $font-size-lg;
+            padding: $nav-page-link-spacing-y-lg 0;
+        }
+       
+    }
+}

@@ -1,0 +1,27 @@
+.home {
+    header{
+        background: #1b1b1d;
+    }
+    &__header {
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-bottom: 20px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+        @include media-breakpoint-up(lg) {
+            border-bottom: 1px solid #b8b8b8;
+        }        
+    }
+    &__all-link {
+        color: theme-color('dark');
+        font-size: $font-size-sm;
+        &:hover {
+            color: theme-color('primary');
+        }
+        img {
+            margin-left: 5px;
+        }
+    }
+}

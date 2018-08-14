@@ -1,0 +1,18 @@
+.partners{
+    margin-bottom: 150px;
+    .partner{
+        background: #fff;
+        padding: 45px;
+        margin-bottom: 15px;
+        min-height: 230px;
+        vertical-align: middle;
+        display: flex;
+        img{
+            width: 100%;
+            max-width: 140px;
+            display: block;
+            margin: auto;
+            max-height: 140px;
+        }
+    }
+}

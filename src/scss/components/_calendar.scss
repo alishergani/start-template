@@ -1,0 +1,234 @@
+.calendar {
+    padding-top: 20px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 54px;
+    }
+    &__month {
+        flex-grow: 1;
+        max-width: 300px;
+    }
+    &__top {
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__table {
+        z-index: 5;
+        position: relative;
+        margin-bottom: 0;
+        max-width: 1140px;
+        box-shadow: 0px 20px 20px 0 rgba(0,0,0,.5);
+        @include media-breakpoint-up(lg) {
+            padding-left: ($grid-gutter-width/2);
+            padding-right: ($grid-gutter-width/2);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @include media-breakpoint-up(xl) {
+            box-shadow: -1px 10px 20px 0px rgba(0, 0, 0, 0);
+            margin-bottom: 50px;
+        }
+        tr {
+            &:last-child {
+                td {
+                    border-bottom: 0;
+                }
+            }
+        }
+        td,
+        th {
+            text-align: center;
+            border: 0;
+            box-sizing: content-box;
+            padding: 4px;
+            width: 14.285714285714286%;
+            @include media-breakpoint-up(md) {
+                padding: 7px;
+            }
+            @include media-breakpoint-up(lg) {
+                text-align: left;
+            }
+        }
+        th {
+            font-family: $font-family-monospace;
+            color: theme-color('primary');
+            font-weight: normal;
+            font-size: 16px;
+            @include media-breakpoint-up(lg) {
+                font-size: 18px;
+            }
+        }
+        td {
+            cursor: pointer;
+            color: rgba(#ffffff, 0.4);
+            background: theme-color('dark');
+            @include media-breakpoint-up(lg) {
+                border: 1px solid rgba(#979797, 0.3);
+            }
+            @include media-breakpoint-up(xl) {
+                padding: 0;
+            }
+        }
+    }
+    &__tile {
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include transition($transition);
+        @include media-breakpoint-down(lg) {
+            background-image: none !important;
+            box-shadow: -1px 10px 20px 0px rgba(0, 0, 0, 0) !important;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 245px;
+            padding: 5px 5px 5px 10px;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &:hover {
+            color: rgba(#ffffff, 0.8);
+        }
+        &.active {
+            box-shadow: -1px 10px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+        .dots {
+            bottom: 3px;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-up(xl) {
+                position: relative;
+                bottom: 0;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+        }
+        .dot {
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: theme-color('primary');
+            @include media-breakpoint-up(xl) {
+                background: transparent;
+                border: 1px solid #b4b6b9;
+            }
+            &.active {
+                @include media-breakpoint-up(xl) {
+                    background: #b4b6b9;
+                }
+            }
+        }
+        .dot+.dot {
+            margin-left: 4px;
+        }
+    }
+    &__day {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        @include media-breakpoint-up(xl) {
+            width: auto;
+            height: auto;
+        }
+        .active & {
+            background: #000;
+            @include media-breakpoint-up(xl) {
+                background: transparent;
+            }
+        }
+    }
+    &__content {
+        flex-grow: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content-wrap,
+    &__slider {
+        flex-grow: 1;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+    &__content-wrap {
+        width: 100%;
+    }
+    &__slider {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        @include transition($transition);
+    }
+    &__icon {
+        margin-top: 3px;
+        margin-right: 8px;
+    }
+    &__text {
+        display: flex;
+        align-items: flex-start;
+        font-size: 12px;
+    }
+    &__title {
+        margin: 4px 0;
+        line-height: 1.33;
+        color: theme-color('primary');
+    }
+    &__button {
+        font-size: 14px;
+        align-self: flex-start;
+    }
+    &__placement {
+        max-width: 320px;
+        margin: 0px auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include transition($transition);
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+        padding-top: 30px;
+        .calendar__day {
+            display: none;
+        }
+        .calendar__content {
+            align-items: flex-start;
+        }
+        .calendar__tile {
+            color: #929091;
+            height: 260px;
+            padding: 5px 5px 5px 10px;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .dots {
+            position: relative;
+            bottom: 0;
+            margin: 10px auto;
+        }
+        .dot {
+            background: transparent;
+            border: 1px solid #b4b6b9;
+            &.active {
+                background: #b4b6b9;
+            }
+        }
+    }
+}

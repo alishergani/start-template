@@ -1,0 +1,47 @@
+.footer {
+    padding: 24px 0;
+    background: theme-color('dark');
+    text-align: center;
+    color: $white;
+    font-size: 14px;
+    @include media-breakpoint-up(lg) {
+        padding: 45px 0;
+    }
+    &__text {
+        color: $white;
+        opacity: 0.6;
+        display: block;
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    &__link {
+        &:hover {
+            color: theme-color("primary");
+        }
+    }
+    &__instagram {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    &__divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 28px 0;
+        @include media-breakpoint-up(lg) {
+            margin: 12px 0;
+        }
+        &::before {
+            content: '';
+            height: 1px;
+            display: inline-block;
+            width: 36px;
+            background-color: #414042;
+        }
+    }
+    &__copyright-text {
+        font-weight: light;
+    }
+}

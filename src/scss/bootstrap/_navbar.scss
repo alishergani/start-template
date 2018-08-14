@@ -1,0 +1,39 @@
+.navbar{
+    background: theme-color('dark');
+    @include media-breakpoint-up(lg) {
+        min-height: $navbar-height;
+    }    
+}
+.home{
+    
+    .navbar{
+        @include media-breakpoint-up(lg) {
+            background: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }    
+    }
+}
+.navbar-nav {
+    .active>.nav-link,
+    .nav-link.active {
+        opacity: 1;
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: $white;
+        }
+    }
+    .nav-link{
+        @include ab-btn-hover(.6);
+    }
+}
+.navbar-toggler{
+    padding: 0;
+    border: 0;
+    margin-right: 10px;
+}

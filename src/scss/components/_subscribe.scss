@@ -1,0 +1,49 @@
+.subscribe{
+    padding: 150px 0 170px;
+    background: #1b1b1d;
+    margin: 30px 0;
+    color: theme-color('white');
+    text-align: center;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }    
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__form{
+        position: relative;
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }        
+        input{
+            background: transparent;
+            border-width: 0 0 1px 0;
+            border-radius: 0;
+            color: theme-color('white');
+            @include media-breakpoint-up(md) {
+                margin-right: 20px;
+            }            
+            &:focus{
+                color: theme-color('white');
+                box-shadow: none;
+                background: transparent;
+                border-color: theme-color('primary');
+            }
+        }
+        button{
+            cursor: pointer;
+        }
+    }
+    &__arrow{
+        border: 0;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        background: none;
+        outline: none;
+        appearance: none;
+    }
+    &__button{
+        background: none;
+    }
+}

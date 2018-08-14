@@ -1,0 +1,103 @@
+.digest{
+    background-color: #f7f7f7;
+    position: relative;
+    padding-top: 80px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        height: 80px;
+    }
+    &::before{
+        top: 0;
+        background-image: url('img/digest-top.png');
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        font-size: 14px;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 16px;
+        }
+
+        &:first-child{
+            border-top: 1px solid #d6d6d6;
+        }
+        &:hover{
+            .digest__title{
+                color: theme-color('primary');
+            }
+            .digest__progress{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }   
+        p{
+            margin-bottom: 0;
+        }     
+    }
+    &__content{
+        padding: 10px 0;
+        @include media-breakpoint-up(lg) {
+            padding: 20px 0;
+        }        
+    }
+    &__title{
+        @include transition($transition);
+    }
+    &__header{
+        @include media-breakpoint-up(lg) {
+            border-bottom: 0;
+        }        
+    }
+    &__date{
+        font-size: $font-size-sm;
+        opacity: 0.5;
+        display: block;
+        margin: 8px 0;
+    }
+    &__progress{
+        position: relative;
+        flex-grow: 1;
+        height: 1px;
+        margin-right: 20px;
+        &::before, &::after{
+            top: 0;
+            height: 1px;
+            content: '';
+            position: absolute;
+            background: #997f52;
+        }
+        &::before{
+            opacity: 0.3;
+            width: 100%;
+        }
+        &::after{
+            @include transition(all 2s linear);
+            opacity: 1;
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            background: theme-color('primary');
+            width: 0%;
+        }
+    }
+    &__button-wrap{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    &__list{
+        margin-bottom: 60px;
+    }
+}

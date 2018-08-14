@@ -1,0 +1,10 @@
+//
+// Alternate buttons
+//
+@each $color,
+$value in $theme-colors {
+    .btn-ab-#{$color} {
+        @include ab-button-variant($value, $value);
+    }
+}
+
